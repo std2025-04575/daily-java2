@@ -20,7 +20,16 @@ package day01;
 public class Lesson1 {
 
 	public static void main(String[] args) {
-		/*ここから記入*/
+		System.out.println("出力します");
+		//int型の変数firstに12を代入
+		int first=12;
+		System.out.println(first);
+		float second=1.6f;
+		System.out.println(second);
+		String forth="こんにちは";
+		System.out.println(forth);
+		boolean third=true;
+		System.out.println(third);/*ここから記入*/
 
 	}
 
