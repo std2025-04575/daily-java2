@@ -21,7 +21,18 @@ public class Lesson6 {
 
 	public static void main(String[] args) {
 		/*ここから記入*/
-
+		String[] name= {"鈴木","田中","佐藤"};
+		String name2="";
+		
+		System.out.println("カンマ区切りで配列を出力します");
+		
+		for(int i=0;i<name.length;i++) {
+			name2=name2+name[i];
+		if(i!=name.length-1){
+			name2=name2+",";
+		}
+		}
+		System.out.println(name2);
 	}
 
 }
