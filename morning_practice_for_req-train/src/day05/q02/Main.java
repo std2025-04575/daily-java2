@@ -60,7 +60,21 @@ class Main {
 
 	public static void main(String[] args) throws IOException {
 		/*ここから記入*/
-
+		ConsoleReader CR=new ConsoleReader();
+		Validation VD=new Validation();
+		
+		boolean Login;
+		int id;
+		
+		System.out.println("4ケタのログインIDを入力してください。");
+		while(!Login){
+			System.out.println("input id?");
+			
+			id=CR.inputId();
+			Login=VD.checkId(id);
+			
+			
+		}
 	}
 
 }
