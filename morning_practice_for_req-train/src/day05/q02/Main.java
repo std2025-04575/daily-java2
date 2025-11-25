@@ -63,7 +63,7 @@ class Main {
 		ConsoleReader CR=new ConsoleReader();
 		Validation VD=new Validation();
 		
-		boolean Login;
+		boolean Login=
 		int id;
 		
 		System.out.println("4ケタのログインIDを入力してください。");
