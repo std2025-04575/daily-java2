@@ -57,7 +57,11 @@ class Main {
 		magic.attack(magicMp);
 
 		/*ここから記入*/
-
+		Sorcerer sorcerer=new Sorcerer("魔導士");
+		
+		int mp=20;
+		
+		sorcerer.attack(mp);
 	}
 
 }

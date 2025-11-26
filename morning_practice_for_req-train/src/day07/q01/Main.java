@@ -43,12 +43,15 @@ class Main {
 
 	public static void main(String[] args) {
 		/*ここから記入*/
-		//飲料水オブジェクトを生成してコンストラクタを呼び出す
-		Drink drink1=new Drink(140,"リアル・コーラ");
-		Drink drink2=new Drink(210,"ハイパー・ドライ");
-		Drink drink3=new Drink();
-		
 		//要素数3のDrink型の配列を宣言
+		Drink[] drink=new Drink[3];
+		drink[0]=new Drink(140,"リアル・コーラ");
+		drink[1]=new Drink(210,"ハイパー・ドライ");
+		drink[2]=new Drink();
+		
+		for(Drink dr:drink) {
+			dr.show();
+		}
 		
 	}
 

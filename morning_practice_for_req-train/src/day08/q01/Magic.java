@@ -1,5 +1,9 @@
 package day08.q01;
 
+/**
+ * 魔法使いクラス
+ */
+
 public class Magic {
 	private String name;
 
