@@ -47,7 +47,8 @@ public class Main {
 
 	public static void main(String[] args) throws IOException {
 		// ここに記述
-
+		HumanPlayer human=new HumanPlayer();
+		
 	}
 
 }

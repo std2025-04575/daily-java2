@@ -60,18 +60,20 @@ class Main {
 
 	public static void main(String[] args) throws IOException {
 		/*ここから記入*/
-		ConsoleReader CR=new ConsoleReader();
-		Validation VD=new Validation();
+		ConsoleReader cr=new ConsoleReader();
+		Validation vd=new Validation();
 		
-		boolean Login=
-		int id;
+		boolean login=true;
 		
 		System.out.println("4ケタのログインIDを入力してください。");
-		while(!Login){
+		
+		int id;
+		
+		while(login){
 			System.out.println("input id?");
 			
-			id=CR.inputId();
-			Login=VD.checkId(id);
+			id=cr.inputId();
+			login=vd.checkId(id);
 			
 			
 		}

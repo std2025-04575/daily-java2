@@ -75,7 +75,7 @@ public class Main2 {
 	public static void main(String[] args) throws InterruptedException {
 		Magic magic = new Magic("魔法使い");// 名前を引数に入力
 		/*ここから記入*/
-
+		Monster monster=new Monster("スライム",10000);
 	}
 
 }
