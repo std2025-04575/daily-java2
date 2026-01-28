@@ -6,17 +6,22 @@ import java.io.InputStreamReader;
 
 public class ConsoleReader {
 
-	public int inputPIN() throws IOException {
+	public int inputPIN() throws IllegalInputException {
 		int pin = -1;
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
 		System.out.println("4ケタの暗証番号を入力して下さい");
 		System.out.print("input PIN? >>");
-		String inputString = br.readLine();
+		String inputString = "";
+		try {
+			inputString = br.readLine();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 
-		/* ここに記述 */
-
-		/* 記述終了 */
+		if (!inputString.matches("[0-9]{4}")) {
+			throw new IllegalInputException("不正な入力:" + inputString);
+		}
 
 		pin = Integer.parseInt(inputString);
 		return pin;
