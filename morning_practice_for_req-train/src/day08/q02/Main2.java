@@ -69,13 +69,27 @@
 package day08.q02;
 
 import day08.q01.Magic;
+import day08.q01.Sorcerer;
 
 public class Main2 {
 
 	public static void main(String[] args) throws InterruptedException {
-		Magic magic = new Magic("魔法使い");// 名前を引数に入力
 		/*ここから記入*/
-		Monster monster=new Monster("スライム",10000);
+		//		MagicクラスとSorcererクラスを生成する。
+		Magic magic = new Magic("魔法使い");// 名前を引数に入力
+		Sorcerer sorcerer = new Sorcerer("魔導士");
+		//		Monsterクラスを生成する。
+		Monster monster = new Monster("スライム", 10000);
+		//		攻撃ターンをカウントする合計用変数を宣言。
+		int turn = 1;
+		//		while文を記述する
+		while (monster.getHp() >= 0) {
+			//			MagicクラスとSorcererクラスのattackメソッドを呼び出す
+			magic.attack(78, monster);
+			sorcerer.attack(92, monster);
+			turn++;
+		}
+		System.out.println(turn + "ターン目で" + monster.getName() + "を倒した!!");
 	}
 
 }

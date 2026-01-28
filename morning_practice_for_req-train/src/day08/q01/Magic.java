@@ -1,5 +1,7 @@
 package day08.q01;
 
+import day08.q02.Monster;
+
 /**
  * 魔法使いクラス
  */
@@ -12,10 +14,11 @@ public class Magic {
 		this.name = name;
 	}
 
-	public void attack(int mp) {
+	public void attack(int mp, Monster monster) {
 		System.out.println("\n" + name + "の攻撃！！");
 		int damege = (int) (Math.random() * mp) + 10;
 		System.out.println("相手に" + damege + "のダメージ！！");
+		monster.setHp(monster.getHp() - damege);
 	}
 
 }

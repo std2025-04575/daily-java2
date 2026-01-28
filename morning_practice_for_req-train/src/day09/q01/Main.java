@@ -47,7 +47,20 @@ public class Main {
 
 	public static void main(String[] args) throws IOException {
 		// ここに記述
-		HumanPlayer human=new HumanPlayer();
+//		HumanPlayer型のオブジェクトを生成する。
+		HumanPlayer human=new HumanPlayer("suzuki");
+//		ComPlayer型のオブジェクトを生成する
+		ComPlayer com = new ComPlayer();
+//		二つのオブジェクトをJankenBattle.doBattle()の引数に設定する
+		Playable winnerPlayer = JankenBattle.doBattle(human, com);
+//		戻り値がHumanPlayerオブジェクトであれば人間の勝ち、そうでなければコンピュータの勝ちを表示する
+		if(winnerPlayer == null) {
+			System.out.println("あいこです");
+		}else if(winnerPlayer.equals(human)) {
+			System.out.println("あなたの勝ちです");
+		}else if(winnerPlayer.equals(com)){
+			System.out.println("あなたの負けです");
+		}
 		
 	}
 

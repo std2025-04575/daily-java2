@@ -36,8 +36,24 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+/**
+ * レッスン7クラス
+ */
 public class Lesson7 {
-
+	
+	/**
+	 * コンストラクタ
+	 */
+	public Lesson7() {
+		
+	}
+	
+	/**
+	 * メインメソッド
+	 * 
+	 * @param args コマンドライン引数
+	 * @throws IOException 入出力例外クラス
+	 */
 	public static void main(String[] args) throws IOException {
 		/*ここから記入*/
 		System.out.println("数当てゲームです。\n1-10の整数を入力して下さい");

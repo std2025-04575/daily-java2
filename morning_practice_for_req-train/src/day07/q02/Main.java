@@ -69,7 +69,21 @@ public class Main {
 
 	public static void main(String[] args) {
 		/*ここから記入*/
-
+//		要素数3のMember型の配列を宣言します
+		Member[] member = new Member[3];
+//		生成したMemberオブジェクト（コンストラクタ引数：1,"人見"）を配列要素0番目に代入します
+		member[0] = new Member(1, "人見");
+//		生成したMemberオブジェクト（コンストラクタ引数：2,"植木"）を配列要素0番目に代入します
+		member[1] = new Member(2, "植木");
+//		生成したMemberオブジェクト（コンストラクタ引数：3,"吉崎"）を配列要素0番目に代入します
+		member[2] = new Member(3, "吉崎");
+//		MemberManager.show()を呼び出す
+		MemberManager.show(member);
+//		MemberManager.update()を呼び出し、ID：1のメンバー名を"三浦"に変更する
+		MemberManager.update(member, 1, "三浦");
+//		再度MemberManager#show()を呼び出す
+		MemberManager.show(member);
+		
 	}
 
 }

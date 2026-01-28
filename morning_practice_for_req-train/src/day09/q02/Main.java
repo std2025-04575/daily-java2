@@ -40,7 +40,15 @@ public class Main {
 
 	public static void main(String[] args) {
 		/*ここから記入*/
-
+//		Instrument型の配列を生成し、Piano,Drumsオブジェクトを代入する。
+		Instrument[] instrument = new Instrument[2];
+		instrument[0] = new Piano("Yamaha");
+		instrument[1] = new Drums("Pearl");
+//		拡張for文で配列要素を取り出し、二つのオブジェクトの出力と共通のメソッドを実行する
+		for(Instrument list : instrument) {
+			System.out.println(list);
+			list.playMusic();
+		}
 	}
 
 }
